@@ -1,0 +1,353 @@
+/* styles.css */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Tabs and Navigation */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 20px;
+}
+
+nav ul li {
+  flex: 1;
+  text-align: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 10px;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s ease-in-out;
+}
+
+nav ul li a.active {
+  border-bottom: 2px solid #333;
+}
+
+/* Tabs Content */
+.tab-content {
+  display: none;
+}
+
+.active-tab {
+  display: block;
+}
+
+/* HomeTab Background */
+#homeTab {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 20px; /* Adjust the overall height of homeTab */
+}
+
+#homeTab img {
+  width: 100%;
+}
+
+/* facebook icon on homepage for River of life facebook */
+.fb-icon {
+  position: absolute;
+  top: 24.2%; /* Adjust vertical position */
+  left: 17%; /* Adjust horizontal position */
+  transform: translate(-50%, -50%);
+  width: 50px; /* Adjust the size of the icon */
+}
+
+@media screen and (max-width: 768px) { 
+  #homeTab .fb-icon {
+    width: 20px;
+    left: 18%;
+    top: 24.5%;
+  }
+}
+
+/*  */
+/* ABOUT TAB STYLING */
+/*  */
+
+#aboutTab {
+  padding: 20px;
+  box-sizing: border-box;
+  height: calc(100vh - 60px);
+}
+
+#aboutTab img {
+  margin-top: -200px;
+  width: 100%;
+  box-shadow: 10px 10px 10px lightblue;
+}
+
+#aboutTab .body-text {
+  font-family: 'Rajdhani', sans-serif;
+  position: relative;
+  text-align: center;
+  box-shadow: 5px 5px 10px lightblue;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px; 
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-style: italic;
+  font-size: 20px;
+}
+
+#homeTab .photo-text {
+  position: relative;
+  top: 1100px;
+  left: 300px;
+  font-size: 60px;
+  color: white;
+  text-shadow: 2px 4px 4px lightblue;
+}
+
+@media screen and (max-width: 768px) { 
+  #aboutTab .photo-about {
+    margin-top: -430px;
+    width: 100%;
+    box-shadow: 10px 10px 10px lightblue;
+    padding-top: 50px;
+  }
+}
+
+@media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
+  #aboutTab .photo-about {
+    margin-top: -488px;
+    width: 100%;
+    box-shadow: 10px 10px 10px lightblue;
+    padding-top: 50px;
+  }
+}
+
+/*  */
+/* LEXHOP STYLING */
+/*  */
+
+#lexhopTab {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  height: 100vh; /* Set the height to 100% of the viewport height */
+  margin-top: 800px; 
+  border: 2px solid black;
+  margin-bottom: 50px;
+  padding: 8px;
+}
+
+#lexhopTab .lexhopheader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 60px;
+  margin-left: -150px; 
+  text-decoration: underline;
+}
+
+/* Media Query for mobile iphone 14 pro*/
+@media screen and (min-width: 768px) {
+  #lexhopTab .lexhopheader {
+    margin-top: 500px;
+  }
+}
+
+/* Styles for iPhone 12 Pro */
+@media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
+  /* Adjust font size for the lextext p class within #lexhopTab */
+  #lexhopTab .lextext {
+    font-size: 40px !important;
+  }
+}
+
+#lexhopTab .lextext {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 50px;
+  font-style: italic;
+  text-align: center;
+}
+
+/* Facebook icon */
+#lexhopTab .lexhopfb-icon {
+  position: relative; 
+  width: 50px;
+  top: -20px; 
+  left: 6%; 
+  transform: translateX(-50%); 
+}
+
+/* Media Query for fb icon Mobile */
+@media screen and (max-width: 768px) {
+  #lexhopTab .lexhopfb-icon {
+    width: 30px; 
+    top: -4%;
+    margin-left: 40%;
+    transform: translate(-50%, -50%);
+  }
+}  
+
+/* Youtube icon */
+ #lexhopTab .yt-icon {
+  position: relative; 
+  width: 80px;
+  top: -26.5px; 
+  left: 6%; 
+}
+
+/* Media Query for youtube icon Mobile */
+@media screen and (max-width: 768px) {
+  #lexhopTab .yt-icon {
+    width: 75px;
+    height: 65px;
+    top: -2.6%;
+    margin-left: 53%;
+    transform: translate(-50%, -50%);
+  }
+}   
+
+#lexhopTab .lexphoto1,
+#lexhopTab .lexphoto2 {
+  width: 100%;
+  max-width: 400px;
+  height: auto; /* Maintain aspect ratio */
+}
+
+#lexhopTab .lexphoto2 {
+  border: 2px solid black;
+  margin-bottom: 50px;
+}
+
+#connectTab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 200px;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.form-title h2 {
+  text-decoration: underline; /* Underline the "CONNECT" header */
+  font-size: 40px;
+}
+
+.form-fields {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field {
+  margin-bottom: 15px; /* Increased margin for better spacing */
+}
+
+.form-label {
+  text-align: left;
+  padding-bottom: 5px;
+}
+
+/* Adjust input height */
+input, textarea {
+  width: 100%;
+  box-sizing: border-box;
+  height: 25px; /* Adjust the height as needed */
+}
+
+/* Adjust submit button height */
+input[type="submit"] {
+  height: 40px; /* Adjust the height as needed */
+  margin: 0 auto; /* Center the button */
+  width: 100px;
+  background-color: #D4D4D4;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 20px;
+}
+
+input[type="submit"]:hover {
+  background-color: #4da6ff; /* Change the background color on hover */
+}
+
+#connectForm {
+  max-width: 250px; 
+  margin: 0 auto;
+  border: 2px solid black;
+  padding: 100px;
+  font-size: 25px;
+  text-align:end;
+}
+
+@media screen and (max-width: 768px) {
+  #connectForm {
+    padding: 70px;
+  }
+}
+
+#givingTab {
+  font-family: 'Rajdhani', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  font-style: italic;
+  text-align: center;
+  padding: 50px;
+  margin-top: 500px;
+  border: 2px solid black;
+}
+
+.givingTab h3 {
+  text-decoration: underline;
+}
+
+.givingTab p {
+  text-align: end; /* Align the text to the end (right) */
+  margin-bottom: 80px;
+}
+
+#givingTab .givebutton {
+  margin-top: 10px; 
+  font-size: 35px; 
+  padding: 10px;
+  font-family: 'Rajdhani', sans-serif;
+  background-color: #FA5A5A;
+}
+
+#givingTab .givebutton:hover {
+  background-color: #4da6ff; /* Change the hover effect color */
+}
+
+#givingTab .venmo-icon {
+  transform: translate(-50%, -50%);
+  width: 80px; /* Adjust the size of the icon */
+  margin-top: 70px;
+  margin-left: 18px;
+}
+
+#givingTab .cashapp-icon {
+
+  transform: translate(-50%, -50%);
+  width: 80px; /* Adjust the size of the icon */
+  margin-top: -117px;
+  margin-left: 45px;
+}

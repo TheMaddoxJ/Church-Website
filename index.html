@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>River of Life Church</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+<!-- Tabs -->
+<nav>
+    <ul>
+      <li><a href="#homeTab" onclick="showTab('homeTab')">Home</a></li>
+      <li><a href="#aboutTab" onclick="showTab('aboutTab')">About</a></li>
+      <li><a href="#lexhopTab" onclick="showTab('lexhopTab')">LEXHOP</a></li>
+      <li><a href="#givingTab" onclick="showTab('givingTab')">Giving</a></li>
+      <li><a href="#connectTab" onclick="showTab('connectTab')">Connect</a></li>
+    </ul>
+  </nav>
+
+<!-- Tab Contents -->
+<div id="homeTab" class="tab-content">
+
+  <div class="photo-stack">
+    <img class="first-photo" src="./assets/homepageedited.png" alt="Photo 1">
+  </div>
+
+  <div class="fb-icon">
+    <a href="https://www.facebook.com/profile.php?id=100064649321456" class="fb-icon">
+    <img src="./assets/fbicon.png" alt="fbicon">
+  </a>
+  </div>
+
+  <div>
+    <img src="./assets/updated sunday time.png" alt="Photo 2">
+  </div>
+
+  <div>
+    <img src="./assets/updatedwednesday.png" alt="Photo 3">
+  </div>
+  
+  <div>
+    <img src="./assets/spanish-time.png" alt="Photo 4">
+  </div>
+
+</div>
+
+
+<div id="aboutTab" class="tab-content active-tab">
+  <div class="body-text">
+    <h2>Who We Are</h2>
+    <p>River of life Church of God is a spirit filled church in Lexington, Kentucky. <br>
+Our diverse and passionate community is dedicated to pursuing excellence and <br>
+excperiencing revival. We believe in a God who brings us FULL CIRCLE - from bad to good, <br>
+from depressed to victorious - He is the author of beautiful stories. <br><br>
+We offer various services, including a Spanish Service, and a free Men's Breakfast for <br>
+the community every Saturday. We truly LOVE JESUS, LOVE LEXINGTON, AND LOVE YOU!<br>
+<br>
+Location: 757 Wilderness Road, Lexington, KY 40509</p>
+  </div>
+
+<div class="photo-about">
+  <img src="./assets/lexington-new.jpg" alt="About 1">
+</div>
+</div>
+
+
+<div id="lexhopTab" class="tab-content">
+  <h2 class="lexhopheader">LEXHOP</h2>
+
+  <div class="lexhopfb-icon">
+      <a href="https://www.facebook.com/profile.php?id=100080231263319" class="lexhopfb-icon">
+      <img src="./assets/fbicon.png" alt="lexhopfbicon" class="fb-icon">
+  </a>
+  </div>
+
+  <div class="yt-icon">
+    <a href="https://www.youtube.com/@LEXHOP/featured" class="yt-icon">
+    <img src="./assets/yticon.png" alt="yticon" class="yt-icon">
+  </a>
+  </div>
+
+  <div>
+    <img class="lexphoto1" src="./assets/lexhop.png" alt="Photo pray">
+  </div>
+
+  <p class="lextext" id="lextext">We believe that prayer should be the first defense rather than the last resort. <br>
+  Come join us for corporate prayer on Mondays, Tuesdays, Thursdays, & Fridays @ 7PM and Saturdays @ 12PM.</p>
+
+  <div>
+    <img class="lexphoto2" src="./assets/lexhop2.png" alt="photo pray times">
+  </div>
+</div>
+
+<div class="givingTab" id="givingTab" class="tab-content">
+  <h3 class="givingheader">// MAKE AN IMPACT</h3><br>
+    <p>At  RLC, we pledge to continue to be good soil for your generosity.
+    We exist to help people move from where they are to where God wants them to be,
+    and we would love for you to join us in that mission.<br></p>
+  <!-- Add button with an onclick event to redirect to the specific link -->
+  <button class="givebutton" onclick="redirectToGivingLink()">GIVE ONLINE</button>
+
+  <div class="venmo-icon">
+    <a href="" class="venmo-icon">
+    <img src="./assets/venmo.png" alt="venmoicon" class="venmo-icon">
+  </a>
+  </div>
+
+  <div class="cashapp-icon">
+    <a href="cash.app/$rolcog757" class="cashapp-icon">
+    <img src="./assets/cashapp.png" alt="cashappicon" class="cashapp-icon">
+  </a>
+  </div>
+</div>
+
+
+<div class="connectTab" id="connectTab" class="tab-content">
+
+  <form class="formcontainer" id="connectForm" action="https://formsubmit.co/tenille_johnson@yahoo.com" method="post">
+    <div class="form-title">
+      <h2>// CONNECT //</h2>
+      <br>
+      <p>We'd love to<br>get to know you!<br><br>
+        Fill out the form below so we can get in contact with you.</p>
+      <br>
+    </div>
+
+    <div class="form-fields">
+      <div class="form-field">
+        <h3 class="form-label">Name:</h3>
+        <input type="text" id="name" name="name" required><br><br>
+      </div>
+
+      <div class="form-field">
+        <h3 class="form-label">Email:</h3>
+        <input type="email" id="email" name="email" required><br><br>
+      </div>
+
+      <div class="form-field">
+        <h3 class="form-label">Phone:</h3>
+        <input type="tel" id="phone" name="phone"><br><br>
+      </div>
+
+      <div class="form-field">
+        <h3 class="form-label">Message:</h3>
+        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+      </div>
+
+      <input type="submit" value="SUBMIT">
+    </div>
+  </form>
+</div>
+
+
+
+</div>
+
+<script src="tabs.js"></script>
+<script src="give.js"></script>
+</body>
+</html>
