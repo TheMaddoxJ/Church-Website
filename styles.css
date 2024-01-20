@@ -135,6 +135,18 @@ nav ul li a.active {
   }
 }
 
+/* Media Query for iPhone 13 */
+@media only screen 
+  and (min-device-width: 390px) 
+  and (max-device-width: 2532px) 
+  and (min-device-height: 844px) 
+  and (max-device-height: 1170px) 
+  and (-webkit-min-device-pixel-ratio: 3) {
+    #aboutTab .body-text {
+      top: 200px;
+    }
+}
+
 /*  */
 /* LEXHOP STYLING */
 /*  */
@@ -331,10 +343,6 @@ input[type="submit"]:hover {
   padding: 10px;
   font-family: 'Rajdhani', sans-serif;
   background-color: #FA5A5A;
-}
-
-#givingTab .givebutton:hover {
-  background-color: #4da6ff; /* Change the hover effect color */
 }
 
 #givingTab .venmo-icon {
