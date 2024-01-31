@@ -135,7 +135,7 @@ nav ul li a.active {
   }
 }
 
-/* Media Query for iPhone 13 */
+/* Media Query for iPhone 13 ////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 @media only screen 
   and (min-device-width: 390px) 
   and (max-device-width: 2532px) 
@@ -293,10 +293,6 @@ input[type="submit"] {
   background-color: #D4D4D4;
   font-family: 'Rajdhani', sans-serif;
   font-size: 20px;
-}
-
-input[type="submit"]:hover {
-  background-color: #4da6ff; /* Change the background color on hover */
 }
 
 #connectForm {
