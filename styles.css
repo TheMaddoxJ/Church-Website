@@ -61,6 +61,16 @@ nav ul li a.active {
   width: 100%;
 }
 
+#homeTab .photo-text {
+  position: relative;
+  top: 1100px;
+  left: 300px;
+  font-size: 60px;
+  color: white;
+  text-shadow: 2px 4px 4px lightblue;
+}
+
+
 /* facebook icon on homepage for River of life facebook */
 .fb-icon {
   position: absolute;
@@ -85,7 +95,7 @@ nav ul li a.active {
 #aboutTab {
   padding: 20px;
   box-sizing: border-box;
-  height: calc(100vh - 60px);
+  /* height: calc(100vh - 60px); */
 }
 
 #aboutTab img {
@@ -100,21 +110,14 @@ nav ul li a.active {
   text-align: center;
   box-shadow: 5px 5px 10px lightblue;
   background: rgba(255, 255, 255, 0.8);
-  padding: 20px; 
+  padding: 5px; 
   top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-style: italic;
   font-size: 20px;
-}
-
-#homeTab .photo-text {
-  position: relative;
-  top: 1100px;
-  left: 300px;
-  font-size: 60px;
-  color: white;
-  text-shadow: 2px 4px 4px lightblue;
+  margin-top: 16%;
+  margin-bottom: 5%;
 }
 
 @media screen and (max-width: 768px) { 
@@ -128,14 +131,15 @@ nav ul li a.active {
 
 @media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
   #aboutTab .photo-about {
-    margin-top: -488px;
+    /* margin-top: -488px; */
+    margin-top: 90px;
     width: 100%;
     box-shadow: 10px 10px 10px lightblue;
     padding-top: 50px;
   }
 }
 
-/* Media Query for iPhone 13 ////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* Media Query for iPhone 13 */
 @media only screen 
   and (min-device-width: 390px) 
   and (max-device-width: 2532px) 
@@ -147,6 +151,31 @@ nav ul li a.active {
     }
 }
 
+/* Media Query for iPhone 14 Pro Max */
+@media only screen 
+  and (min-device-width: 430px) 
+  and (max-device-width: 932px) 
+  and (-webkit-min-device-pixel-ratio: 3) {
+    #aboutTab .body-text {
+      margin-top: 90px;
+      width: 100%;
+      box-shadow: 10px 10px 10px lightblue;
+      padding-top: 50px;
+      margin-bottom: 150px;
+    }
+}
+
+/* Media Query for iPhone 14 Pro Max */
+@media only screen 
+  and (min-device-width: 430px) 
+  and (max-device-width: 932px) 
+  and (-webkit-min-device-pixel-ratio: 3) {
+    #aboutTab .photo-about {
+      margin-top: 1px
+}
+}
+
+
 /*  */
 /* LEXHOP STYLING */
 /*  */
@@ -156,8 +185,8 @@ nav ul li a.active {
   flex-direction: column;
   align-items: center; /* Center items horizontally */
   justify-content: center; /* Center items vertically */
-  height: 100vh; /* Set the height to 100% of the viewport height */
-  margin-top: 800px; 
+  /* height: 100vh; Set the height to 100% of the viewport height */
+  margin-top: 100px; 
   border: 2px solid black;
   margin-bottom: 50px;
   padding: 8px;
@@ -173,12 +202,12 @@ nav ul li a.active {
   text-decoration: underline;
 }
 
-/* Media Query for mobile iphone 14 pro*/
-@media screen and (min-width: 768px) {
+/* Media Query for mobile iphone 14 pro */
+/* @media screen and (min-width: 768px) {
   #lexhopTab .lexhopheader {
-    margin-top: 500px;
-  }
-}
+    /* margin-top: 500px; */
+  /* }
+} */
 
 /* Styles for iPhone 12 Pro */
 @media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
@@ -217,11 +246,20 @@ nav ul li a.active {
   }
 }  
 
+/* iphone 12 pro */
+@media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
+  #lexhopTab .fb-icon {
+    width: 40px; 
+    top: -150%;
+    margin-left: 40%;
+  }
+}
+
 /* Youtube icon */
  #lexhopTab .yt-icon {
   position: relative; 
   width: 80px;
-  top: -26.5px; 
+  top: -40.1px; 
   left: 6%; 
 }
 
@@ -282,12 +320,12 @@ nav ul li a.active {
 input, textarea {
   width: 100%;
   box-sizing: border-box;
-  height: 25px; /* Adjust the height as needed */
+  height: 25px; 
 }
 
 /* Adjust submit button height */
 input[type="submit"] {
-  height: 40px; /* Adjust the height as needed */
+  height: 40px; 
   margin: 0 auto; /* Center the button */
   width: 100px;
   background-color: #D4D4D4;
