@@ -198,7 +198,6 @@ nav ul li a.active {
   justify-content: center;
   font-family: 'Rajdhani', sans-serif;
   font-size: 60px;
-  margin-left: -150px; 
   text-decoration: underline;
 }
 
@@ -227,7 +226,7 @@ nav ul li a.active {
   text-align: center;
 }
 
-/* Facebook icon */
+/* Facebook icon
 #lexhopTab .lexhopfb-icon {
   position: relative; 
   width: 50px;
@@ -237,16 +236,16 @@ nav ul li a.active {
 }
 
 /* Media Query for fb icon Mobile */
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   #lexhopTab .lexhopfb-icon {
     width: 30px; 
     top: -4%;
     margin-left: 40%;
     transform: translate(-50%, -50%);
   }
-}  
+}   */ */
 
-/* iphone 12 pro */
+/* iphone 12 pro
 @media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
   #lexhopTab .fb-icon {
     width: 40px; 
@@ -256,15 +255,15 @@ nav ul li a.active {
 }
 
 /* Youtube icon */
- #lexhopTab .yt-icon {
+ /* #lexhopTab .yt-icon {
   position: relative; 
   width: 80px;
   top: -40.1px; 
   left: 6%; 
-}
+} */
 
 /* Media Query for youtube icon Mobile */
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   #lexhopTab .yt-icon {
     width: 75px;
     height: 65px;
@@ -272,7 +271,7 @@ nav ul li a.active {
     margin-left: 53%;
     transform: translate(-50%, -50%);
   }
-}   
+}     */
 
 #lexhopTab .lexphoto1,
 #lexhopTab .lexphoto2 {
@@ -284,6 +283,28 @@ nav ul li a.active {
 #lexhopTab .lexphoto2 {
   border: 2px solid black;
   margin-bottom: 50px;
+}
+
+.socialmedia {
+  display: flex;
+  margin-left: 16px;
+  align-items: center;
+}
+
+.socialmedia div img {
+  width: 30px;
+  height: 30px;
+}
+
+.top-content-lexhop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socialmedia .yticon {
+  width: 45px;
+  height: 45px;
 }
 
 #connectTab {
