@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Livestream</title>
+    <link rel="stylesheet" href="livestream.css" />
+  </head>
+
+  <body>
+    <div class="overlay"></div>
+    <!-- Overlay for darkening background -->
+    <!-- Styles moved to livestream.css -->
+
+    <!-- Navbar -->
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html?tab=homeTab">
+            <img src="assets/home icon.png" alt="Home Icon" class="nav-icon" />
+            Home
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <h1>RLC Livestream</h1>
+
+    <div class="video-container">
+      <div class="sk-ww-facebook-live-video" data-embed-id="25466366"></div>
+      <script
+        src="https://widgets.sociablekit.com/facebook-live-video/widget.js"
+        async
+        defer
+      ></script>
+    </div>
+
+    <script src="tabs.js"></script>
+  </body>
+</html>
