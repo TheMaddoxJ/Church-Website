@@ -74,7 +74,7 @@ nav ul li a.active {
 /* facebook icon on homepage for River of life facebook */
 .fb-icon {
   position: absolute;
-  top: 24.2%; /* Adjust vertical position */
+  top: 19.4%; /* Adjust vertical position */
   left: 17%; /* Adjust horizontal position */
   transform: translate(-50%, -50%);
   width: 50px; /* Adjust the size of the icon */
@@ -84,7 +84,7 @@ nav ul li a.active {
   #homeTab .fb-icon {
     width: 20px;
     left: 18%;
-    top: 24.5%;
+    top: 19.8%;
   }
 }
 
